@@ -1,0 +1,26 @@
+:root {
+  --bg: #4c3023;
+  --ink: #fff;
+  --ink-dim: #e6dcd6;
+  --accent: #a66c4f;
+  --line: #fff;
+}
+
+*{ box-sizing: border-box; }
+html,body { height: 100%; }
+body.backdrop {
+  margin: 0;
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: #bfc3c5 radial-gradient(transparent, rgba(0,0,0,.15));
+}
+
+/* Background */
+.hero, .stage {
+  background: var(--bg) url("background.png") center/cover no-repeat;
+  margin: 36px auto;
+  width: min(1100px, 94vw);
+  border-radius: 6px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.25);
+  padding: clamp(24px, 4vw, 44px);
+}
