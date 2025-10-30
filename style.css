@@ -24,3 +24,69 @@ body.backdrop {
   box-shadow: 0 10px 22px rgba(0,0,0,.25);
   padding: clamp(24px, 4vw, 44px);
 }
+
+/* Intro screen */
+.title {
+  margin: 0 0 .5rem 0;
+  font-weight: 700;
+  letter-spacing: .04rem;
+  font-size: clamp(40px, 6vw, 64px);
+}
+.rules {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.9;
+  font-size: clamp(15px, 1.9vw, 22px);
+  color: var(--ink-dim);
+  max-width: 60ch;
+}
+.rules li { margin: .6em 0; }
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 18px;
+  border-radius: 14px;
+  background: var(--accent);
+  color: var(--ink);
+  border: 4px solid #fff;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 3px 0 rgba(255,255,255,.35) inset;
+}
+
+/* Board page */
+.bar { width: min(1100px, 94vw); margin: 18px auto 0 auto; color:#fff; }
+.title.sm { font-size: clamp(28px, 4vw, 44px); }
+
+.stage {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: clamp(18px, 4vw, 32px);
+}
+
+/* Left column */
+.left-rail { display: grid; gap: 18px; align-content: start; }
+.pill {
+  border: 4px solid #fff;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 14px;
+  padding: 14px 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.status {
+  min-height: 28px;
+  font-size: clamp(14px, 1.8vw, 20px);
+}
+.names label { display: block; margin: .6rem 0; color: var(--ink-dim); }
+.names input {
+  width: 100%; padding: 8px 10px; border-radius: 6px; border: 2px solid #fff5;
+  background: #0000; color: var(--ink);
+  outline: none;
+}
+.names input:focus { border-color: #fff; box-shadow: 0 0 0 3px #ffffff30; }
+
+.score.hidden { display: none; }
+.score p { margin: .4rem 0; }
