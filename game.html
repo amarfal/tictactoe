@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tic tac toe.</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body class="backdrop">
+  <header class="bar">
+    <h1 class="title sm">tic tac toe.</h1>
+  </header>
+
+  <main class="stage">
+    <section class="left-rail">
+      <button id="startBtn" class="pill">start?</button>
+
+      <div id="status" class="status"></div>
+
+      <form id="namesForm" class="names">
+        <label>
+          player one:
+          <input id="p1Name" type="text" placeholder="x" maxlength="16"/>
+        </label>
+        <label>
+          player two:
+          <input id="p2Name" type="text" placeholder="o" maxlength="16"/>
+        </label>
+      </form>
+
+      <div id="score" class="score hidden">
+        <p><span id="s1Name">player one</span> wins: <b id="s1Wins">0</b></p>
+        <p><span id="s2Name">player two</span> wins: <b id="s2Wins">0</b></p>
+      </div>
+    </section>
+
+    <section class="board-wrap">
+      <div id="board" class="board" aria-label="tic tac toe board" role="grid">
+        <!-- 9 cells injected with JS :D -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
